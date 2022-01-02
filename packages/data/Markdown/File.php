@@ -264,7 +264,7 @@ class File extends Object_
     }
 
     protected function get_placeholder_renderer_cache_key(): string {
-        return "placeholder_renderer__{$this->__class->name}";
+        return str_replace('\\', '_', "placeholder_renderer__{$this->__class->name}");
     }
 
     protected function get_placeholder_renderer(): PlaceholderRenderer {

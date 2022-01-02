@@ -23,7 +23,7 @@ class M01_posts extends Migration
     public function create(): void {
         $this->db->create('posts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('path')->unique();
+            $table->string('path', 200)->unique();
             $table->dateTime('modified_at')->nullable();
             $table->dateTime('deleted_at')->nullable();
         });

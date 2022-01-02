@@ -34,5 +34,10 @@
             "My\\Tests\\": "tests/",
             "My\\Samples\\": "samples/"
         }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true
+        }
     }
 }

@@ -41,31 +41,4 @@ return (object)[
         'elastic' => (bool)($_ENV['LOG_ELASTIC'] ?? false),
         'db' => (bool)($_ENV['LOG_DB'] ?? false),
     ],
-
-    /* @see \Osm\Docs\Docs\Hints\Settings\Docs */
-    'docs' => (object)[
-        'index_modified' => true,
-        'books' => [
-            /* @see \Osm\Docs\Docs\Hints\Settings\Book */
-            'framework' => (object)[
-                'repo' => 'https://github.com/osmphp/framework.git',
-                'path' => "{$osm_app->paths->temp}/docs/framework",
-                'dir' => 'docs',
-                'color' => 'green-700',
-                'versions' => [
-                    /* @see \Osm\Docs\Docs\Hints\Settings\Version */
-                    '0.12' => (object)['branch' => 'v0.12'],
-                    '0.13' => (object)['branch' => 'v0.13'],
-                    '0.14' => (object)array_merge(['branch' => 'v0.14'],
-                        isset($_ENV['FRAMEWORK_DOC_PATH'])
-                            ? [
-                                'branch' => null,
-                                'path' => $_ENV['FRAMEWORK_DOC_PATH'],
-                            ]
-                            : []
-                    ),
-                ],
-            ],
-        ],
-    ],
 ];
