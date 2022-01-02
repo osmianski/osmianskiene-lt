@@ -1,0 +1,15 @@
+@import "icons.css";
+
+@layer components {
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-mono;
+    }
+
+    input:-webkit-autofill {
+        -webkit-box-shadow: inset 0 0 0 9999px white;
+    }
+
+    input[name="q"]:-webkit-autofill::first-line {
+        @apply text-lg font-sans;
+    }
+}
