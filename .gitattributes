@@ -1,5 +1,0 @@
-* text=auto
-
-*.php diff=php
-*.md diff=markdown
-

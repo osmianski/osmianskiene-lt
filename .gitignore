@@ -1,10 +1,13 @@
-/node_modules
-/vendor
+# Configuration
+wp-config.php
+
+# Uploads
+/wp-content/uploads/
+
+# Log files
+*.log
+
+# IDE
 /.idea
-/.osmscripts
-/.env*
-/.phpunit*
-/generated
-/temp
-/package.json
-/package-lock.json
+/.vscode
+
