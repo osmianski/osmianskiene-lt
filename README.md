@@ -63,7 +63,7 @@ Use the WordPress Dashboard. To enable it:
     docker exec -it osmianskiene-lt-wordpress-1 /bin/bash
    
     # run inside the container
-    chown -R www-data:www-data wp-content/uploads
+    chown -R www-data:www-data wp-content
     ```
 
  
