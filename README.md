@@ -10,7 +10,14 @@ Source code for osmianskiene.lt
 
 ### Prerequisites
 
-Install [PHP, Composer, Docker and Docker Compose](https://laravel.com/docs/9.x).
+Download and install:
+
+* [Docker](https://docs.docker.com/get-docker/)
+* [Docker Compose](https://docs.docker.com/compose/install/)
+
+If you are working on a Mac, install [Docker Desktop for Mac](https://docs.docker.com/docker-for-mac/install/) instead. It includes Docker and Docker Compose out of the box.
+
+If you use Windows, install [Docker Desktop for Windows](hhttps://docs.docker.com/desktop/install/windows-install/) instead. 
 
 ### Installation
 
