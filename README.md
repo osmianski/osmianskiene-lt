@@ -29,5 +29,8 @@ cd ~/projects/osmianskiene
 docker-compose up
 ```
 
-Open the local copy of the website in the browser: <http://127.0.0.1:8000/>.
+Open the local copy of the website in the browser: 
+
+* [Frontend](http://127.0.0.1:8000/)
+* [Admin](http://127.0.0.1:8000/wp-admin/)
  

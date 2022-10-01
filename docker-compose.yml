@@ -12,6 +12,7 @@ services:
         volumes:
             - './wordpress:/var/www/html'
             - './data/uploads:/var/www/html/wp-content/uploads'
+            - './config/my-php.ini:/usr/local/etc/php/conf.d/my-php.ini'
         depends_on:
             - mysql
     mysql:
